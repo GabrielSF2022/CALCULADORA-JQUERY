@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Jquery Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <form name="form">
+            <input class="calc-display">
+        </form>
+        <table>
+            <tr>
+                <td>
+                    <input type="button" value="C" onclick="c()">
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="inser('/')">
+                </td>
+                <td>
+                    <input type="button" value="<" onclick="del()">
+                </td>
+                <td>
+                    <input type="button" value="X" onclick="inser('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="inser(7)">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="inser(8)">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="inser(9)">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="inser('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="inser(4)">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="inser(5)">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="inser(6)">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="inser('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="inser(1)">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="inser(2)">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="inser(3)">
+                </td>
+                <td>
+                    <input rowspan=2  type="button" value="=" onclick="eql()" style="background-color:orange;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input colspan="2"  type="button" value="0" onclick="inser(0)">
+                </td>
+                <td>
+                    <input type="button" value="." onclick="inser('.')">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
